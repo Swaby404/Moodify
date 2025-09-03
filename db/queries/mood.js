@@ -24,3 +24,4 @@ export async function getMoods() {
   const { rows: moods } = await db.query(sql);
   return moods;
 }
+
