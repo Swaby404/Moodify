@@ -1,0 +1,214 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Hero with video */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#heroVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff9900;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+}
+
+/* Mood Selector */
+.mood-selector {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.mood-selector h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.mood-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.mood-card {
+  padding: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.mood-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(255,255,255,0.2);
+}
+
+/* Trending Products */
+.trending {
+  padding: 6rem 2rem;
+  background: #111;
+  text-align: center;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #1c1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  display: block;
+}
+
+.product-card .info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.product-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Footer */
+.footer {
+  background: #0a0a0a;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  color: #bbb;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  color: #ffcc00;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #ff9900;
+}

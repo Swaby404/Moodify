@@ -1,29 +1,28 @@
--- Mood-App Database Schema
+-- Moodify Database Schema
 
-DROP TABLE IF EXISTS activities;
-DROP TABLE IF EXISTS user_activity;
-DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS user_activities;
+DROP TABLE IF EXISTS moods;
+DROP TABLE IF EXISTS users;
 
 
-CREATE TABLE user (
+CREATE TABLE users (
   id serial PRIMARY KEY,
-  username text NOT NULL UNIQUE,
+  username text NOT NULL,
   password_hash text NOT NULL
-  
 );
 
-CREATE TABLE activities (
+
+CREATE TABLE moods (
   id serial PRIMARY KEY,
+  user_id integer REFERENCES users(id) ON DELETE CASCADE,
   name text NOT NULL,
-  description text NOT NULL,
-  user_Id
-  
+  description text 
 );
 
-CREATE TABLE user_activity (
+CREATE TABLE user_activities (
   id serial PRIMARY KEY,
-  user_id integer NOT NULL REFERENCES user(id) ON DELETE CASCADE,
-  mood_selector text NOT NULL,
+  user_id integer REFERENCES users(id) ON DELETE CASCADE,
+  mood_id integer REFERENCES moods(id) ON DELETE CASCADE,
   description text NOT NULL
 );
 

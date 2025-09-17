@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Shopping 2.0</title>
+  <link rel="stylesheet" href="fPo2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d2d3b57c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Moodify</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Moods</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero with Video -->
+  <section class="hero">
+    <video autoplay muted loop id="heroVideo">
+      <source src="https://cdn.coverr.co/videos/coverr-night-city-aerial-view-3131/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content glass">
+      <h1>Shop What You Feel</h1>
+      <p>Your emotions, your style. Discover products tailored to your current mood.</p>
+      <a href="#moods" class="btn">Discover Now</a>
+    </div>
+  </section>
+
+  <!-- Mood Selector (Glass Cards) -->
+  <section class="mood-selector" id="moods">
+    <h2>Pick Your Mood</h2>
+    <div class="mood-cards">
+      <div class="mood-card glass">😊 Happy</div>
+      <div class="mood-card glass">😔 Sad</div>
+      <div class="mood-card glass">😌 Calm</div>
+      <div class="mood-card glass">🔥 Excited</div>
+      <div class="mood-card glass">⚡ Energetic</div>
+      <div class="mood-card glass">💤 Tired</div>
+    </div>
+  </section>
+
+  <!-- Trending Products -->
+  <section class="trending">
+    <h2>Trending Now</h2>
+    <div class="grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Product">
+        <div class="info">
+          <h3>Zen Candle</h3>
+          <p>Perfect for a calm mood</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1596464716126-7efbe9b4a4de" alt="Product">
+        <div class="info">
+          <h3>Energy Drink</h3>
+          <p>Boosts your excitement</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1616627987932-26094e3c8a17" alt="Product">
+        <div class="info">
+          <h3>Soft Hoodie</h3>
+          <p>For those sad rainy days</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1606813902910-5e8d9fef32ab" alt="Product">
+        <div class="info">
+          <h3>Colorful Sneakers</h3>
+          <p>Show off your happy vibes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Moodify. All Rights Reserved.</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
