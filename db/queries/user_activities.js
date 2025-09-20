@@ -16,12 +16,12 @@ export async function createUserActivity({user_Id, mood_id, description}) {
   return userActivity;
 }
 
-export async function getUserActivities(user_id) {
+export async function getUserActivities(user_Id) {
   const sql = `
   SELECT *
   FROM user_activities
   WHERE user_id = $1
   `;
-  const { rows: userActivities } = await db.query(sql, [user_id]);
+  const { rows: userActivities } = await db.query(sql, [user_Id]);
   return userActivities;
 }
